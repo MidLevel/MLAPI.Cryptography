@@ -13,12 +13,16 @@ namespace MLAPI.Cryptography.KeyExchanges
         public static readonly BigInteger DEFAULT_PRIME = (new BigInteger("1") << 255) - 19;
         public static readonly BigInteger DEFAULT_ORDER = (new BigInteger(1) << 252) + new BigInteger("27742317777372353535851937790883648493");
         public static EllipticCurve DEFAULT_CURVE = new EllipticCurve(486662, 1, DEFAULT_PRIME, EllipticCurve.CurveType.Montgomery);
-
         public static CurvePoint DEFAULT_GENERATOR = new CurvePoint(9, new BigInteger("14781619447589544791020593568409986887264606134616475288964881837755586237401"));
 
         protected readonly EllipticCurve curve;
         public readonly BigInteger priv;
         protected readonly CurvePoint generator, pub;
+
+        public ECDiffieHellman(byte[] priv = null) : this(DEFAULT_CURVE, DEFAULT_GENERATOR, DEFAULT_ORDER, priv)
+        {
+
+        }
 
         public ECDiffieHellman(EllipticCurve curve, CurvePoint generator, BigInteger order, byte[] priv = null)
         {

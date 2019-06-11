@@ -17,8 +17,8 @@ namespace MLAPI.Cryptography.Examples
                 watch.Start();
 
                 // Both create their instances
-                ECDiffieHellman serverDiffie = new ECDiffieHellman(ECDiffieHellman.DEFAULT_CURVE, ECDiffieHellman.DEFAULT_GENERATOR, ECDiffieHellman.DEFAULT_ORDER);
-                ECDiffieHellman clientDiffie = new ECDiffieHellman(ECDiffieHellman.DEFAULT_CURVE, ECDiffieHellman.DEFAULT_GENERATOR, ECDiffieHellman.DEFAULT_ORDER);
+                ECDiffieHellman serverDiffie = new ECDiffieHellman();
+                ECDiffieHellman clientDiffie = new ECDiffieHellman();
 
                 // Exchange publics
 
