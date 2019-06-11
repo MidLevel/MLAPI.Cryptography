@@ -57,3 +57,12 @@ using (RSACryptoServiceProvider clientRSA = new RSACryptoServiceProvider())
     byte[] key2 = clientDiffie.GetVerifiedSharedPart(serverPublic);
 }
 ```
+### Timing Side Channel Attack Prevention
+```csharp
+byte[] array1 = new byte[120];
+byte[] array2 = new byte[120];
+array[50] = 67;
+
+// This comparison will take constant time, no matter where the diff is (if any).
+bool equal = ComparisonUtils.ConstTimeArrayEqual(array1, array2);
+```
