@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MLAPI.Cryptography", "MLAPI.Cryptography\MLAPI.Cryptography.csproj", "{DE2A4003-40E3-406D-B5FF-E6F1C8B0B64A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MLAPI.Cryptography.Examples", "MLAPI.Cryptography.Examples\MLAPI.Cryptography.Examples.csproj", "{F91BE960-52E2-4F36-9196-1EEA1FFA0380}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,5 +15,9 @@ Global
 		{DE2A4003-40E3-406D-B5FF-E6F1C8B0B64A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DE2A4003-40E3-406D-B5FF-E6F1C8B0B64A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DE2A4003-40E3-406D-B5FF-E6F1C8B0B64A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F91BE960-52E2-4F36-9196-1EEA1FFA0380}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F91BE960-52E2-4F36-9196-1EEA1FFA0380}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F91BE960-52E2-4F36-9196-1EEA1FFA0380}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F91BE960-52E2-4F36-9196-1EEA1FFA0380}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
