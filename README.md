@@ -1,7 +1,7 @@
 # MLAPI.Cryptography
 MLAPI.Cryptography is a Unity friendly crypto library to fill the missing features of Unity's Mono runtime framework.
 
-Currently it offers a BigInt implementation, a ECDHE implementation and a pure EllipticCurve implementation.
+Currently it offers a BigInt, ECDHE, ECDHE_RSA and EllipticCurve implementation. Note that MLAPI.Cryptography is **NOT** designed to be an extensive crypto library such as NaCL or replace the .NET Framework. It's simply there to fill the missing gaps in the Unity Engine. Behind the scenes, MLAPI.Cryptography will use as much of the avalible .NET surface as possible. An example of this is the ECDHE_RSA implementation which uses MLAPI.Cryptographys BigInt, EllipticCurve and DiffieHellman implementations while it uses .NET's RSA implementation.
 
 
 ### ECDHE Usage
