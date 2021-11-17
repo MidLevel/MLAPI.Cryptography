@@ -33,7 +33,7 @@ namespace MLAPI.Cryptography.KeyExchanges
             if (priv == null)
             {
                 this.priv = new BigInteger();
-                this.priv.GenRandomBits(order.DataLength, rand);
+                this.priv.GenRandomBits(order.DataLength * 8, rand);
             }
             else this.priv = new BigInteger(priv);
 
